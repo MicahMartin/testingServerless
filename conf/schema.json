@@ -1,0 +1,274 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "loid",
+    "uuid",
+    "name",
+    "type",
+    "owner",
+    "creator",
+    "timeCreated",
+    "lastModifier",
+    "timeModified",
+    "locker",
+    "timeLocked",
+    "statusName",
+    "statusIdentifier",
+    "size",
+    "updateCounter",
+    "description",
+    "path",
+    "props"
+  ],
+  "properties": {
+    "loid": {
+      "$id": "#/properties/loid",
+      "type": "string",
+      "title": "The Loid Schema",
+      "default": "",
+      "examples": [
+        "1.1.741829134"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "uuid": {
+      "$id": "#/properties/uuid",
+      "type": "string",
+      "title": "The Uuid Schema",
+      "default": "",
+      "examples": [
+        "b3df99d2-2c76-11e8-a02a-11dcffa0814e"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The Name Schema",
+      "default": "",
+      "examples": [
+        "stern-snowman1.xml"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "title": "The Type Schema",
+      "default": "",
+      "examples": [
+        "EOM::CompoundStory"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "owner": {
+      "$id": "#/properties/owner",
+      "type": "string",
+      "title": "The Owner Schema",
+      "default": "",
+      "examples": [
+        "stern"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "creator": {
+      "$id": "#/properties/creator",
+      "type": "string",
+      "title": "The Creator Schema",
+      "default": "",
+      "examples": [
+        "stern"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "timeCreated": {
+      "$id": "#/properties/timeCreated",
+      "type": "string",
+      "title": "The Timecreated Schema",
+      "default": "",
+      "examples": [
+        "1521574897"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "lastModifier": {
+      "$id": "#/properties/lastModifier",
+      "type": "string",
+      "title": "The Lastmodifier Schema",
+      "default": "",
+      "examples": [
+        "stern"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "timeModified": {
+      "$id": "#/properties/timeModified",
+      "type": "string",
+      "title": "The Timemodified Schema",
+      "default": "",
+      "examples": [
+        "1536095749"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "locker": {
+      "$id": "#/properties/locker",
+      "type": "array",
+      "title": "The Locker Schema"
+    },
+    "timeLocked": {
+      "$id": "#/properties/timeLocked",
+      "type": "string",
+      "title": "The Timelocked Schema",
+      "default": "",
+      "examples": [
+        "1534524835"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "statusName": {
+      "$id": "#/properties/statusName",
+      "type": "string",
+      "title": "The Statusname Schema",
+      "default": "",
+      "examples": [
+        "Stories/Working"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "statusIdentifier": {
+      "$id": "#/properties/statusIdentifier",
+      "type": "string",
+      "title": "The Statusidentifier Schema",
+      "default": "",
+      "examples": [
+        "RGB(0,0,255)"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "size": {
+      "$id": "#/properties/size",
+      "type": "string",
+      "title": "The Size Schema",
+      "default": "",
+      "examples": [
+        "9410"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "updateCounter": {
+      "$id": "#/properties/updateCounter",
+      "type": "string",
+      "title": "The Updatecounter Schema",
+      "default": "",
+      "examples": [
+        "98"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "array",
+      "title": "The Description Schema"
+    },
+    "path": {
+      "$id": "#/properties/path",
+      "type": "string",
+      "title": "The Path Schema",
+      "default": "",
+      "examples": [
+        "/Boston/WebLinked/2018-03-21/Metro/Stories/stern-snowman1.xml"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "props": {
+      "$id": "#/properties/props",
+      "type": "object",
+      "title": "The Props Schema",
+      "required": [
+        "templateName",
+        "productInfo",
+        "workFolder",
+        "title",
+        "wordCount",
+        "masterUUID"
+      ],
+      "properties": {
+        "templateName": {
+          "$id": "#/properties/props/properties/templateName",
+          "type": "string",
+          "title": "The Templatename Schema",
+          "default": "",
+          "examples": [
+            "/SysConfig/Boston/Templates/story.xml"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "productInfo": {
+          "$id": "#/properties/props/properties/productInfo",
+          "type": "object",
+          "title": "The Productinfo Schema",
+          "required": [
+            "issueDate"
+          ],
+          "properties": {
+            "issueDate": {
+              "$id": "#/properties/props/properties/productInfo/properties/issueDate",
+              "type": "string",
+              "title": "The Issuedate Schema",
+              "default": "",
+              "examples": [
+                "20180321"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "workFolder": {
+          "$id": "#/properties/props/properties/workFolder",
+          "type": "string",
+          "title": "The Workfolder Schema",
+          "default": "",
+          "examples": [
+            "/Boston/Content/Metro"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "title": {
+          "$id": "#/properties/props/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Snowman "
+          ],
+          "pattern": "^(.*)$"
+        },
+        "wordCount": {
+          "$id": "#/properties/props/properties/wordCount",
+          "type": "string",
+          "title": "The Wordcount Schema",
+          "default": "",
+          "examples": [
+            "157"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "masterUUID": {
+          "$id": "#/properties/props/properties/masterUUID",
+          "type": "string",
+          "title": "The Masteruuid Schema",
+          "default": "",
+          "examples": [
+            "b3df99d2-2c76-11e8-a02a-11dcffa0814e"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}
